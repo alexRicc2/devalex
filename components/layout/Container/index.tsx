@@ -8,7 +8,7 @@ interface ContainerProps {
 const Container:FC<ContainerProps> = ({children, className})=> {
 
   const rootclass = cn(
-    '',
+    'p-4 lg:px-6 max-w-[1400px] m-auto',
     className
   )
 

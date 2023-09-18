@@ -1,49 +1,68 @@
+"use client";
+
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Container from "../Container";
-export default function NavBar() {
+import useScrollDirection from "@/utils/scroll";
+import CustomLink from "@/components/ui/Link";
+import cn from 'clsx'
+function NavBar() {
+
+  const scrollDirection = useScrollDirection()
+
+  const rootClass = cn(
+    "top-0 sticky z-[9999] opacity-100 bg-black",
+    {
+      ['animate-hideElement bg-red-300']: scrollDirection === 'down',
+      ['animate-showElement bg-blue-300']: scrollDirection === 'up'
+    }
+  )
+
   return (
-    <Container>
+    <div className={rootClass}>
+      <Container className="">
+        <nav className="relative flex items-center justify-between">
+          <div className="block flex-none md:hidden">
+            <MobileMenu />
+          </div>
+          <div className="flex w-full items-center">
+            <div className="flex w-full md:w-1/3">
+              <Link href="/" className="mr-2 flex w-full items-center justify-end md:justify-center md:w-auto lg:mr-6">
+                <h1 className="flex-none text-sm font-medium uppercase">
+                  AlexDev
+                </h1>
+              </Link>
 
-      <nav className="relative flex items-center justify-between p-4 lg:px-6">
-        <div className="block flex-none md:hidden">
-          <MobileMenu />
-        </div>
-        <div className="flex w-full items-center">
-          <div className="flex w-full md:w-1/3">
-            <Link href="/" className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6">
-              <h1 className="flex-none text-sm font-medium uppercase">
-                AlexDev
-              </h1>
-            </Link>
-
+            </div>
+            <div className="hidden justify-center md:flex md:w-1/3">
+              <ul className="hidden gap-6 text-sm md:flex md:items-center">
+                <li>
+                  <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="flex justify-end md:w-1/3">
+              <CustomLink href="/" variant="outline" className="hidden md:block">
+                Contact-me
+              </CustomLink>
+            </div>
           </div>
-          <div className="hidden justify-center md:flex md:w-1/3">
-            <ul className="hidden gap-6 text-sm md:flex md:items-center">
-              <li>
-                <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex justify-end md:w-1/3">
-            <Link href="/">
-              Contact-me
-            </Link>
-          </div>
-        </div>
-      </nav>
-    </Container>
+        </nav>
+      </Container>
+    </div>
   )
 }
+
+export default NavBar
