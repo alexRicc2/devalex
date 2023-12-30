@@ -20,7 +20,7 @@ function NavBar() {
 
   return (
     <div className={rootClass}>
-      <Container className="">
+      <Container className="p-4">
         <nav className="relative flex items-center justify-between">
           <div className="block flex-none md:hidden">
             <MobileMenu />
