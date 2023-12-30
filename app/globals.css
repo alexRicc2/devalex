@@ -3,10 +3,32 @@
 @tailwind utilities;
 
 *{
-  outline: 1px solid red; 
+  /* outline: 1px solid red;  */
 }
 
 body {
-  background-color: rgb(23, 23, 23);
+  background-color: #171717;
   color: #fff
+}
+
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 4px;
+}
+
+
+::-webkit-scrollbar-track {
+  width: 4px;
+  background: transparent;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474747;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
 }

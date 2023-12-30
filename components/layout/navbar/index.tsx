@@ -11,10 +11,10 @@ function NavBar() {
   const scrollDirection = useScrollDirection()
 
   const rootClass = cn(
-    "top-0 sticky z-[9999] opacity-100 bg-black",
+    "top-0 sticky z-[9999] opacity-100 bg-[#17171799] backdrop-blur",
     {
-      ['animate-hideElement bg-red-300']: scrollDirection === 'down',
-      ['animate-showElement bg-blue-300']: scrollDirection === 'up'
+      ['animate-hideElement']: scrollDirection === 'down',
+      ['animate-showElement']: scrollDirection === 'up'
     }
   )
 

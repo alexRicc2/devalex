@@ -48,7 +48,7 @@ function MobileMenu() {
             leaveFrom="opacity-100 backdrop-blur-[.5px]"
             leaveTo="opacity-0 backdrop-blur-none"
           >
-            <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
+            <div className="fixed inset-0 bg-[#171717]" aria-hidden="true" />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
