@@ -13,7 +13,7 @@ function About() {
           <div className='w-2/3 m-auto md:m-0'>
 
             <div className='relative mb-4 aspect-square rounded-2xl overflow-hidden'>
-              <Image src="/alex.webp" alt="alex" fill className='object-cover' loading='lazy' sizes='(max-width: 768px) 100vw, 50vw' />
+              <Image src="/alex.webp" alt="alex" fill className='object-cover' priority sizes='(max-width: 768px) 100vw, 50vw' />
             </div>
             <h3 className='text-2xl text-center mb-2 font-semibold'>Alex Sant&apos;Anna</h3>
             <div className='flex justify-center gap-2'>
