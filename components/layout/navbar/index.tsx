@@ -28,7 +28,7 @@ function NavBar() {
           <div className="flex w-full items-center">
             <div className="flex w-full md:w-1/3">
               <Link href="/" className="mr-2 flex w-full items-center justify-end md:justify-center md:w-auto lg:mr-6">
-                <h1 className="flex-none text-sm font-medium uppercase">
+                <h1 className="flex-none text-sm uppercase font-bold">
                   AlexDev
                 </h1>
               </Link>
