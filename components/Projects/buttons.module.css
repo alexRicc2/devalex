@@ -22,15 +22,14 @@
   /* border: 1px solid var(--primary); */
   border-radius: 50%;
 }
-@media (max-width: 767px){
-  .next, .prev{
-    height: 32px;
-    width: 32px;
+@media (max-width: 1200px){
+  .next{
+    right: -10px;
+  } 
+  .prev{
+    left: -10px;
   }
-  .next svg, .prev svg{
-    width: 16px;
-    height: 16px;
-  }
+  
 }
 .disabled{
   opacity: 0;
