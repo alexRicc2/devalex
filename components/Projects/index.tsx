@@ -1,6 +1,5 @@
 'use client';
 import React from 'react'
-import Container from '../layout/Container'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ProjectCard from '../ProjectCard';
 import "swiper/css";
