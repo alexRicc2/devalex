@@ -18,7 +18,7 @@ export default function Search() {
     console.log('e:', e)
     const val = e.target as HTMLFormElement
     const search = val.search as HTMLInputElement;
-    const newParams = new URLSearchParams(searchParams.toString())
+    const newParams = new URLSearchParams(searchParams?.toString())
 
     if(search.value){
       newParams.set('q', searchValue)
