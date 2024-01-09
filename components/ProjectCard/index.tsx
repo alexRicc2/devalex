@@ -9,7 +9,7 @@ function ProjectCard() {
       </div>
       <div className='p-4'>
         <div className='flex items-center gap-2 mb-2'>
-        <span className='h-4 w-1 bg-secondary'></span>
+        <span className='h-4 w-1 bg-primary'></span>
         <h3 className='text-lg'>My project</h3>
         </div>
         <p className='text-zinc-400 mb-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, eros in condimentum suscipit, leo.</p>

@@ -35,7 +35,7 @@ function NavBar() {
 
             </div>
             <div className="hidden justify-center md:flex md:w-1/3">
-              <ul className="hidden gap-6 text-sm md:flex md:items-center">
+              <ul className="hidden gap-6 text-base md:flex md:items-center">
                 <li>
                   <Link href="/" className="underline-offset-4 hover:text-neutral-300 hover:underline text-neutral-400">
                     About

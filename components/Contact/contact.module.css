@@ -1,0 +1,42 @@
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus
+{
+  caret-color: #fff;
+  background-color: #1f1f1f;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #1f1f1f inset;
+  border: 0;
+  outline: 0;
+}
+@keyframes button-loading-spinner {
+  from {
+      transform: rotate(0turn);
+  }
+
+  to {
+      transform: rotate(1turn);
+  }
+}
+
+.loading span{
+  display: none;
+}
+.button.loading{
+  background-color: #1f1f1f99;
+}
+.loading::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
