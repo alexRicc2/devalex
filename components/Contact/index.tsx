@@ -132,7 +132,7 @@ function Contact() {
             <div className="w-full md:w-[40%]">
               <Message className="hidden md:block max-w-full w-full" />
 
-              <div className="mt-4 flex items-center justify-between sm:justify-center sm:gap-x-5">
+              <div className="mt-4 flex items-center justify-between flex-wrap gap-2 sm:justify-center sm:gap-x-5">
                 <button
                   className="flex items-center gap-1 sm:gap-2 social-svg lighter"
                   onClick={() => {
@@ -163,7 +163,7 @@ function Contact() {
                 </Link>
               </div>
 
-              <div className="mt-2 flex items-center gap-1 justify-center sm:gap-3">
+              <div className="mt-2 items-center gap-1 justify-center sm:gap-3 hidden md:flex">
 
                 <Link
                   href="/"
