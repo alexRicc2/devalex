@@ -4,8 +4,10 @@ import History from "@/components/History"
 import About from "@/components/About"
 import Projects from "@/components/Projects"
 import Contact from "@/components/Contact"
+import { GET_PROJECTS } from "@/lib/queries/projetos/getProjects"
 
-export default function Home() {
+export default async function Home() {
+  const projects = await GET_PROJECTS()
   return (
     <>
       <Hero/>
