@@ -2,7 +2,7 @@ carnavas oe
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 running for the first time in formatted notebook testin ssh again
 ## Getting Started
-
+work on thurday, not able to commit
 
 
 First, run the development server:
