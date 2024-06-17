@@ -10,7 +10,7 @@ import SlidePrevButton from './SlidePrevButton';
 function Projects() {
   return (
     <section className='py-6 md:py-12'>
-      <h2 className='text-center text-3xl md:text-5xl mb-6 font-bold'>What I developed..</h2>
+      <h2 className='text-center text-3xl md:text-5xl mb-6 font-bold'>What I&apos;ve developed..</h2>
       <div className='md:py-6 md:my-[-1.5rem] overflow-hidden'>
 
         <Swiper
